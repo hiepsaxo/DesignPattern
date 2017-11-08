@@ -53,7 +53,7 @@ public class FilteringApples {
 			return "red".equalsIgnoreCase(apple.getColor()) && apple.getWeight() > 150;
 		}
 	}
-
+	@FunctionalInterface
 	public interface Predicate<T> {
 		boolean test(T t);
 	}
